@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Age Eligibility  for Navratri</h1>
+
+    
+</body>
+<script>
+    
+let userInput = prompt("Enter your birth date (YYYY-MM-DD):");
+
+        
+        let birthDate = new Date(userInput);
+
+        
+        let cutoffDate = new Date("2026-10-19");
+
+        
+        if (isNaN(birthDate.getTime())) {
+            alert("Invalid date format entered. Please use YYYY-MM-DD.");
+        } else {
+            
+            let result = (birthDate < cutoffDate)
+                ? "You are eligible to come to Navratri!"
+                : "You are not eligible to come to Navratri.";
+            alert(result);
+            console.log(userInput);
+        document.write(result);
+        }
+
+
+
+
+
+</script>
+
+</html>
+<!--let age = prompt("Enter date in October:");
+
+if (age < 19) {
+    console.log("You are eligible for Navratri");
+} else {
+    console.log("You are not eligible for Navratri");
+}
+
+
+-->
